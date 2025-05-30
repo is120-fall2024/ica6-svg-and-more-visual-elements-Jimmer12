@@ -9,7 +9,12 @@
 <body>
   <header>
     <div class="header-row">
-      <!-- [Q1. Draw an svg logo and put it as the .header-logo div. Wrap the svg in an <a> with href referencing this page ] -->
+      <a href="./">
+          <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="40" stroke="rgba(224,223,226,0.8)" stroke-width="5" fill="rgba(211,143,34,0.8)" />
+            <text x="50%" y="55%" text-anchor="middle" fill="rgba(40,36,45,1)" font-size="30px" font-family="Arial" dy=".3em">A</text>
+          </svg>
+        </a>
       <div class="header-logo">LOGO GOES HERE</div>
       <nav>
         <ul>
@@ -21,23 +26,29 @@
   </header>
   
   <section class="hero" id="hero">
-    <!-- [Q2. use a <video> to insert a video to autoplay. ] -->
+    <video autoplay muted loop playsinline width="100%" height="100%">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     <div class="left-video">Insert Video Here</div>
     <div class="right-content">
-      <!-- [Q2 cont. Add paragraph text to the div below about the video you choose. ] -->
+      <div class="right-text">
+        This video highlights the beauty and tranquility of the natural world. Captured in high definition, it showcases serene landscapes and gentle wildlife movements, perfect for a calm visual experience.
+      </div>
       <div class="right-text"></div>
       <div class="right-button">
         <!-- [Q3. Style this button both for original styles and for the styles to change :onhover. ] -->
         <button>Style this button!</button>
       </div>
     </div>
-    <!-- [Q4. Add a preformatted SVG image of a section break (some design) to make a more smooth transition between sections. Use an online SVG generator to create this SVG, and have the colors match the page.] -->
+   <div class="bottom-svg-wave">
+      <svg viewBox="0 0 1440 320"><path fill="rgba(40,36,45,1)" fill-opacity="1" d="M0,96L30,85.3C60,75,120,53,180,64C240,75,300,117,360,138.7C420,160,480,160,540,149.3C600,139,660,117,720,122.7C780,128,840,160,900,160C960,160,1020,128,1080,117.3C1140,107,1200,117,1260,112C1320,107,1380,85,1410,74.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </div>
     <div class="bottom-svg-wave"></div>
   </section>
 
   <section class="iframe-container" id="iframe">
-    <!-- [Q5. Copy the webaddress or iframe architecture from a website of your choice and insert it to the content of the .iframe div] -->
-    <div class="iframe">Insert your iframe here</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KRO-2hUpcZ8?si=MBu-LZ5_vcRnq-xf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
   
   <section class="hw6-container" id="hw6">
