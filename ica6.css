@@ -112,6 +112,19 @@ header {
   margin: 3vh;
   padding: 1vh 1vw;
   width: 40%;
+  background-color: rgba(var(--accent-rgb), 0.8);
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.right-button button:hover {
+  background-color: rgba(var(--primary-rgb), 0.9);
+  transform: scale(1.1);
+  color: var(--accent);
 }
 
 
